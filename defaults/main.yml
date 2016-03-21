@@ -1,0 +1,3 @@
+---
+travis_dashboard_path: /data/www/
+travis_dashboard_user: www-data

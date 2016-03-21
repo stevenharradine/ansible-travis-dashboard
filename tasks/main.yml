@@ -1,0 +1,24 @@
+---
+- name: clone Travis Dashboard | git
+  git:
+    repo: "https://github.com/stevenharradine/travis-dashboard.git"
+    dest: "{{ travis_dashboard_path }}"
+    update: yes
+    force: yes
+
+- name: install | npm
+  npm:
+    path: "{{ travis_dashboard_path }}"
+
+- name: copy configuration
+  template:
+    src: templates/config.js
+    dest: "{{ travis_dashboard_path }}/config.js"
+    mode: 0644
+
+- name: set cron jobs
+  cron:
+    name: "cron for travis dashboard"
+    user: "{{ travis_dashboard_user }}"
+    special_time: daily
+    job: "cd {{ travis_dashboard_path }} && node generate-travis-dashboard.js > index.html"
