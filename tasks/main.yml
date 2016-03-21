@@ -21,4 +21,4 @@
     name: "cron for travis dashboard"
     user: "{{ travis_dashboard_user }}"
     special_time: daily
-    job: "cd {{ travis_dashboard_path }} && node generate-travis-dashboard.js > index.html"
+    job: "cd {{ travis_dashboard_path }} && node generate-travis-dashboard.js {{ travis_dashboard_organization }} > index.html"
