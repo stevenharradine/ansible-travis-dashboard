@@ -4,3 +4,4 @@ travis_dashboard_directory: /data/www/
 travis_dashboard_install_name: travis-dashboard
 travis_dashboard_path: "{{ travis_dashboard_directory }}{{ travis_dashboard_install_name }}"
 travis_dashboard_organization: telusdigital
+travis_dashboard_use_node_server: yes
