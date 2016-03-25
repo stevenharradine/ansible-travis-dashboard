@@ -1,7 +1,7 @@
 # ansible-travis-dashboard
 Ansible role for setting up and running Travis Dashboard
 
-[![licence](https://img.shields.io/badge/licence-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![Licence](https://img.shields.io/badge/Licence-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 Tunables
 --------
