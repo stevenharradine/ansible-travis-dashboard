@@ -20,7 +20,7 @@
   cron:
     name: "generate travis dashboard cache"
     user: "{{ travis_dashboard_user }}"
-    special_time: daily
+    special_time: hourly
     job: "cd {{ travis_dashboard_path }} && node generate-travis-dashboard.js {{ travis_dashboard_organization }} > data.js"
 
 - name: start travis dashboard server
