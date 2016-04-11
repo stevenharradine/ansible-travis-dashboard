@@ -16,7 +16,7 @@ Example Playbook
 ----------------
     - hosts: servers
       roles:
-         - role: stevenharradine.travis-dashboard
+         - role: telusdigital.travis-dashboard
 
 Contributors
 ------------

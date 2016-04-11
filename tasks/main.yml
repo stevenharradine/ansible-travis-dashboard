@@ -1,7 +1,7 @@
 ---
 - name: clone Travis Dashboard | git
   git:
-    repo: "https://github.com/stevenharradine/travis-dashboard.git"
+    repo: "https://github.com/telusdigital/travis-dashboard.git"
     dest: "{{ travis_dashboard_path }}"
     update: yes
     force: yes
